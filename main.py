@@ -13,7 +13,9 @@ def main():
     char_dict = count_chars(file_content)
     print("--------- Character Count -------")
     #print (char_dict)
-    print(sorted_dict(char_dict))
+    sorted_char_list = sorted_dict(char_dict)
+    for item in sorted_char_list:
+        print(f"{item["char"]}: {item["num"]}")
 
 
 def get_book_text(file_path):
