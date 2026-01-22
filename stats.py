@@ -38,3 +38,12 @@ def count_chars(file_content):
         if lowercase_char in char_dict:
             char_dict[lowercase_char] += 1
     return char_dict
+
+#sorted_dict = {}
+def sorted_dict(char_dict):
+    sorted_dict = {}
+    for key in sorted(char_dict, key=char_dict.get,reverse=True):
+        if key.isalpha():
+            sorted_dict[key] = char_dict[key]
+
+    return sorted_dict
