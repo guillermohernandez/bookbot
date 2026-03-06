@@ -2,7 +2,7 @@
 
 ## How to use
 
-Type the following in your terminal\
+Type the following in your terminal
 
 ```
 python3 main.py <path_to_book>
